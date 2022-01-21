@@ -3,18 +3,18 @@ import React from "react";
 
 const Form = ({setInputText , inputText , setTodos , todos, setStatus}) => {
     const inputTextHandler = (e) => {
-      // console.log(e.target.value)
-        setInputText(e.target.value); 
+        setInputText(e.target.value);   
     }
     const submitFormHandler = (e) => {
       e.preventDefault();
-      if(e.target.value){
+      // console.log(inputText!==undefined && inputText !== "");  
+      if(inputText!==undefined && inputText !== ""){
         setTodos([
           ...todos, {text: inputText , completed: false, id: Math.random()*1000 }
         ]);
-        setInputText("");
+        setInputText(""); 
       }else {
-        alert('input should not be blank!!');
+        alert('task should not be blank');
       }
       
     }

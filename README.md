@@ -1,13 +1,12 @@
 # Todo-app
 
-## Simple Todo App
 ### can add task
-### can delete task
 ### can complete task
-### tasks are locally saved does not remove after refreshing the page 
-## Available Scripts
+### can delete task
+### can filter using dropdown [all / uncompleted / completed]
+### save the data into localstorage , get back when page refresh## Available Scripts
 
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
